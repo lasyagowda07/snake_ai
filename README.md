@@ -1,4 +1,4 @@
-3D AI Snake
+3D AI Snake : https://luckysnakeai.vercel.app/ 
 
 Reinforcement Learning in the Browser
 
