@@ -6,7 +6,7 @@ import { loadPolicy, chooseAction } from "../lib/onnxPolicy";
 import { obs18, reset3D, step3D } from "../lib/snake3d";
 
 export default function Page() {
-  const [mode, setMode] = useState<CameraMode>("iso");
+  const [mode, setMode] = useState<CameraMode>("manual");
   const [frame, setFrame] = useState<Frame>(() => reset3D([10, 10, 10]));
   const sessionRef = useRef<any>(null);
   const runningRef = useRef(true);
@@ -92,7 +92,7 @@ export default function Page() {
       <div style={{ display: "flex", justifyContent: "space-between", gap: 16, flexWrap: "wrap", alignItems: "end" }}>
         <div>
           <h1 style={{ margin: 0, fontSize: 34, lineHeight: 1.05, letterSpacing: "-0.02em" }}>
-            immortal Snake <span style={{ opacity: 0.7 }}>(^.^ mwuhahaha)</span>
+            immortal snake <span style={{ opacity: 0.7 }}>(^.^ mwuhahaha)</span>
           </h1>
           <p style={{ marginTop: 10, opacity: 0.75, fontSize: 13 }}>
             The AI-cursed snake is stuck in a loop for eternity. Auto-resets on death or full grid.
